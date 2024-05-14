@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css') }}" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main class="h-screen grid form-background">
+      <form action="" class="m-auto w-3/5" method="post">
+        <h1 class="text-3xl text-white mb-10 uppercase font-bold">
+          Report Issue
+        </h1>
+        <div class="form-control mb-5">
+          <input
+            type="text"
+            name="name"
+            class="bg-gray-300 p-2 outline-none rounded-sm"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="form-control mb-5">
+          <input
+            type="text"
+            name="contact"
+            class="bg-gray-300 p-2 outline-none rounded-sm"
+            placeholder="Your contact number"
+          />
+        </div>
+        <div class="form-control mb-5">
+          <input
+            type="text"
+            name="victim_name"
+            class="bg-gray-300 p-2 outline-none rounded-sm"
+            placeholder="Victim's name"
+          />
+        </div>
+        <div class="form-control mb-5">
+          <input
+            type="text"
+            name="address"
+            class="bg-gray-300 p-2 outline-none rounded-sm"
+            placeholder="address of victim"
+          />
+        </div>
+        <div class="form-control mb-5">
+          <select name="state" class="w-full p-2">
+            <option value="punjab">Punjab</option>
+          </select>
+        </div>
+        <div class="form-control mb-5">
+          <input
+            type="text"
+            name="district"
+            class="bg-gray-300 p-2 outline-none rounded-sm"
+            placeholder="District of victim"
+          />
+        </div>
+        <div class="form-control mb-5">
+          <input
+            type="text"
+            name="block"
+            class="bg-gray-300 p-2 outline-none rounded-sm"
+            placeholder="Block of victim"
+          />
+        </div>
+        <div class="form-control mb-5">
+          <input type="hidden" name="issue_type" value="Domestic Abuse" />
+        </div>
+        <div class="form-control">
+          <input
+            type="submit"
+            value="Send Report"
+            class="bg-[#C73659] text-white p-3"
+          />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

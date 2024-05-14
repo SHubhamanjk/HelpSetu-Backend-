@@ -1,0 +1,13 @@
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+  .form-background {
+    background-image: url("form-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  input {
+    width: 100%;
+  }
+}
