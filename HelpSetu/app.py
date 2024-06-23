@@ -1,4 +1,3 @@
-```python
 # Import necessary libraries and modules from Flask and other packages
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
